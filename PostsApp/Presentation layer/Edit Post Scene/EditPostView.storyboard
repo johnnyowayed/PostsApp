@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Post View Controller-->
+        <scene sceneID="iWf-ss-n7L">
+            <objects>
+                <viewController storyboardIdentifier="EditPostViewController" id="rGx-0U-Ono" customClass="EditPostViewController" customModule="PostsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Thc-wO-92J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SNQ-OZ-9wk">
+                                <rect key="frame" x="20" y="76" width="374" height="88"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kD6-if-8Zs">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmE-qX-FIK">
+                                        <rect key="frame" x="0.0" y="54" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AmE-qX-FIK" firstAttribute="leading" secondItem="SNQ-OZ-9wk" secondAttribute="leading" id="Jqh-jh-qtY"/>
+                                    <constraint firstItem="AmE-qX-FIK" firstAttribute="top" secondItem="kD6-if-8Zs" secondAttribute="bottom" constant="20" id="K8U-h7-v3s"/>
+                                    <constraint firstAttribute="bottom" secondItem="AmE-qX-FIK" secondAttribute="bottom" id="Rdp-jg-Leh"/>
+                                    <constraint firstAttribute="trailing" secondItem="kD6-if-8Zs" secondAttribute="trailing" id="Wbg-mz-GLr"/>
+                                    <constraint firstAttribute="trailing" secondItem="AmE-qX-FIK" secondAttribute="trailing" id="bM6-OI-AuM"/>
+                                    <constraint firstItem="kD6-if-8Zs" firstAttribute="leading" secondItem="SNQ-OZ-9wk" secondAttribute="leading" id="d2M-zc-6fn"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7m-GX-GxJ">
+                                <rect key="frame" x="20" y="770" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.83137254900000002" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9Zf-hC-L7e"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DnS-EQ-BwV">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4qu-3K-sw7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DnS-EQ-BwV" firstAttribute="centerX" secondItem="Thc-wO-92J" secondAttribute="centerX" id="9d1-LS-SDj"/>
+                            <constraint firstItem="4qu-3K-sw7" firstAttribute="bottom" secondItem="V7m-GX-GxJ" secondAttribute="bottom" constant="32" id="Poe-i5-nyW"/>
+                            <constraint firstItem="kD6-if-8Zs" firstAttribute="leading" secondItem="Thc-wO-92J" secondAttribute="leading" constant="20" id="e5S-sL-GF5"/>
+                            <constraint firstItem="V7m-GX-GxJ" firstAttribute="leading" secondItem="4qu-3K-sw7" secondAttribute="leading" constant="20" id="eku-3E-wPX"/>
+                            <constraint firstAttribute="trailing" secondItem="kD6-if-8Zs" secondAttribute="trailing" constant="20" id="fMb-z7-JIM"/>
+                            <constraint firstItem="4qu-3K-sw7" firstAttribute="trailing" secondItem="SNQ-OZ-9wk" secondAttribute="trailing" constant="20" id="i5T-ub-fRB"/>
+                            <constraint firstItem="SNQ-OZ-9wk" firstAttribute="leading" secondItem="4qu-3K-sw7" secondAttribute="leading" constant="20" id="jRh-uv-KSO"/>
+                            <constraint firstItem="SNQ-OZ-9wk" firstAttribute="top" secondItem="4qu-3K-sw7" secondAttribute="top" constant="32" id="mmK-5b-1L2"/>
+                            <constraint firstItem="4qu-3K-sw7" firstAttribute="trailing" secondItem="V7m-GX-GxJ" secondAttribute="trailing" constant="20" id="rCL-C8-3vg"/>
+                            <constraint firstItem="DnS-EQ-BwV" firstAttribute="centerY" secondItem="Thc-wO-92J" secondAttribute="centerY" id="zyD-WM-T6E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="DnS-EQ-BwV" id="FZ0-ha-Mkq"/>
+                        <outlet property="confirm_Button" destination="V7m-GX-GxJ" id="TF6-zz-xbH"/>
+                        <outlet property="description_TextField" destination="AmE-qX-FIK" id="GLR-bE-5Yf"/>
+                        <outlet property="title_TextField" destination="kD6-if-8Zs" id="xJ1-Ua-Sk8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DW3-Ad-wOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

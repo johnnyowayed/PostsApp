@@ -9,21 +9,83 @@
 /* Begin PBXBuildFile section */
 		B27EE8D827216C4900D878A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8D727216C4900D878A2 /* AppDelegate.swift */; };
 		B27EE8DA27216C4900D878A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8D927216C4900D878A2 /* SceneDelegate.swift */; };
-		B27EE8DC27216C4900D878A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8DB27216C4900D878A2 /* ViewController.swift */; };
 		B27EE8DF27216C4900D878A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EE8DD27216C4900D878A2 /* Main.storyboard */; };
 		B27EE8E127216C4C00D878A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27EE8E027216C4C00D878A2 /* Assets.xcassets */; };
 		B27EE8E427216C4C00D878A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EE8E227216C4C00D878A2 /* LaunchScreen.storyboard */; };
+		B27EE8F527216F3300D878A2 /* PostsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8EF27216F3300D878A2 /* PostsScenePresenter.swift */; };
+		B27EE8F627216F3300D878A2 /* PostsSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8F027216F3300D878A2 /* PostsSceneWorker.swift */; };
+		B27EE8F727216F3300D878A2 /* PostsSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8F127216F3300D878A2 /* PostsSceneRouter.swift */; };
+		B27EE8F827216F3300D878A2 /* PostsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8F227216F3300D878A2 /* PostsSceneViewController.swift */; };
+		B27EE8F927216F3300D878A2 /* PostsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8F327216F3300D878A2 /* PostsSceneInteractor.swift */; };
+		B27EE8FA27216F3300D878A2 /* PostsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8F427216F3300D878A2 /* PostsSceneModel.swift */; };
+		B27EE90427216F6F00D878A2 /* PostsDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8FE27216F6F00D878A2 /* PostsDetailsScenePresenter.swift */; };
+		B27EE90527216F6F00D878A2 /* PostsDetailsSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE8FF27216F6F00D878A2 /* PostsDetailsSceneWorker.swift */; };
+		B27EE90727216F6F00D878A2 /* PostsDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE90127216F6F00D878A2 /* PostsDetailsSceneViewController.swift */; };
+		B27EE90827216F6F00D878A2 /* PostDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE90227216F6F00D878A2 /* PostDetailsSceneInteractor.swift */; };
+		B27EE90927216F6F00D878A2 /* PostDetailsSceneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE90327216F6F00D878A2 /* PostDetailsSceneModel.swift */; };
+		B27EE90C272178D000D878A2 /* WebServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE90B272178D000D878A2 /* WebServiceConfig.swift */; };
+		B27EE90E272178E200D878A2 /* WebServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE90D272178E200D878A2 /* WebServiceConstants.swift */; };
+		B27EE911272178F500D878A2 /* WebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE910272178F500D878A2 /* WebServiceHelper.swift */; };
+		B27EE9142721790E00D878A2 /* JSONResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9132721790E00D878A2 /* JSONResponseDecoder.swift */; };
+		B27EE91827217FDA00D878A2 /* PostDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EE91727217FDA00D878A2 /* PostDetailsView.storyboard */; };
+		B27EE91D272196CC00D878A2 /* TitleSubtitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE91B272196CC00D878A2 /* TitleSubtitleTableViewCell.swift */; };
+		B27EE91E272196CC00D878A2 /* TitleSubtitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27EE91C272196CC00D878A2 /* TitleSubtitleTableViewCell.xib */; };
+		B27EE9262721A23000D878A2 /* CreatePostScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9202721A23000D878A2 /* CreatePostScenePresenter.swift */; };
+		B27EE9272721A23000D878A2 /* CreatePostSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9212721A23000D878A2 /* CreatePostSceneWorker.swift */; };
+		B27EE9292721A23000D878A2 /* CreatePostSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9232721A23000D878A2 /* CreatePostSceneViewController.swift */; };
+		B27EE92A2721A23000D878A2 /* CreatePostSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9242721A23000D878A2 /* CreatePostSceneInteractor.swift */; };
+		B27EE92F2721A27100D878A2 /* CreatePostView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EE92E2721A27100D878A2 /* CreatePostView.storyboard */; };
+		B27EE9312721A4C200D878A2 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EE9302721A4C200D878A2 /* APIBuilder.swift */; };
+		B2A8E1D22721BFD9002DBB7E /* InputTextFeildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1D02721BFD9002DBB7E /* InputTextFeildTableViewCell.swift */; };
+		B2A8E1D32721BFD9002DBB7E /* InputTextFeildTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A8E1D12721BFD9002DBB7E /* InputTextFeildTableViewCell.xib */; };
+		B2A8E1D62721C288002DBB7E /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1D52721C288002DBB7E /* Encodable+Extension.swift */; };
+		B2A8E1DE2721CAAD002DBB7E /* EditPostScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1D82721CAAD002DBB7E /* EditPostScenePresenter.swift */; };
+		B2A8E1DF2721CAAD002DBB7E /* EditPostSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1D92721CAAD002DBB7E /* EditPostSceneWorker.swift */; };
+		B2A8E1E12721CAAD002DBB7E /* EditPostSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1DB2721CAAD002DBB7E /* EditPostSceneViewController.swift */; };
+		B2A8E1E22721CAAD002DBB7E /* EditPostSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8E1DC2721CAAD002DBB7E /* EditPostSceneInteractor.swift */; };
+		B2A8E1E52721CB69002DBB7E /* EditPostView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2A8E1E42721CB69002DBB7E /* EditPostView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B27EE8D427216C4900D878A2 /* PostsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27EE8D727216C4900D878A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27EE8D927216C4900D878A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B27EE8DB27216C4900D878A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B27EE8DE27216C4900D878A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B27EE8E027216C4C00D878A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B27EE8E327216C4C00D878A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B27EE8E527216C4C00D878A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B27EE8EF27216F3300D878A2 /* PostsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsScenePresenter.swift; sourceTree = "<group>"; };
+		B27EE8F027216F3300D878A2 /* PostsSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneWorker.swift; sourceTree = "<group>"; };
+		B27EE8F127216F3300D878A2 /* PostsSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneRouter.swift; sourceTree = "<group>"; };
+		B27EE8F227216F3300D878A2 /* PostsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneViewController.swift; sourceTree = "<group>"; };
+		B27EE8F327216F3300D878A2 /* PostsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneInteractor.swift; sourceTree = "<group>"; };
+		B27EE8F427216F3300D878A2 /* PostsSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneModel.swift; sourceTree = "<group>"; };
+		B27EE8FE27216F6F00D878A2 /* PostsDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsScenePresenter.swift; sourceTree = "<group>"; };
+		B27EE8FF27216F6F00D878A2 /* PostsDetailsSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsSceneWorker.swift; sourceTree = "<group>"; };
+		B27EE90127216F6F00D878A2 /* PostsDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDetailsSceneViewController.swift; sourceTree = "<group>"; };
+		B27EE90227216F6F00D878A2 /* PostDetailsSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsSceneInteractor.swift; sourceTree = "<group>"; };
+		B27EE90327216F6F00D878A2 /* PostDetailsSceneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsSceneModel.swift; sourceTree = "<group>"; };
+		B27EE90B272178D000D878A2 /* WebServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConfig.swift; sourceTree = "<group>"; };
+		B27EE90D272178E200D878A2 /* WebServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConstants.swift; sourceTree = "<group>"; };
+		B27EE910272178F500D878A2 /* WebServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHelper.swift; sourceTree = "<group>"; };
+		B27EE9132721790E00D878A2 /* JSONResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResponseDecoder.swift; sourceTree = "<group>"; };
+		B27EE91727217FDA00D878A2 /* PostDetailsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostDetailsView.storyboard; sourceTree = "<group>"; };
+		B27EE91B272196CC00D878A2 /* TitleSubtitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleTableViewCell.swift; sourceTree = "<group>"; };
+		B27EE91C272196CC00D878A2 /* TitleSubtitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleSubtitleTableViewCell.xib; sourceTree = "<group>"; };
+		B27EE9202721A23000D878A2 /* CreatePostScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostScenePresenter.swift; sourceTree = "<group>"; };
+		B27EE9212721A23000D878A2 /* CreatePostSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostSceneWorker.swift; sourceTree = "<group>"; };
+		B27EE9232721A23000D878A2 /* CreatePostSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostSceneViewController.swift; sourceTree = "<group>"; };
+		B27EE9242721A23000D878A2 /* CreatePostSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostSceneInteractor.swift; sourceTree = "<group>"; };
+		B27EE92E2721A27100D878A2 /* CreatePostView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreatePostView.storyboard; sourceTree = "<group>"; };
+		B27EE9302721A4C200D878A2 /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
+		B2A8E1D02721BFD9002DBB7E /* InputTextFeildTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFeildTableViewCell.swift; sourceTree = "<group>"; };
+		B2A8E1D12721BFD9002DBB7E /* InputTextFeildTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextFeildTableViewCell.xib; sourceTree = "<group>"; };
+		B2A8E1D52721C288002DBB7E /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		B2A8E1D82721CAAD002DBB7E /* EditPostScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostScenePresenter.swift; sourceTree = "<group>"; };
+		B2A8E1D92721CAAD002DBB7E /* EditPostSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostSceneWorker.swift; sourceTree = "<group>"; };
+		B2A8E1DB2721CAAD002DBB7E /* EditPostSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostSceneViewController.swift; sourceTree = "<group>"; };
+		B2A8E1DC2721CAAD002DBB7E /* EditPostSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostSceneInteractor.swift; sourceTree = "<group>"; };
+		B2A8E1E42721CB69002DBB7E /* EditPostView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditPostView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +118,158 @@
 		B27EE8D627216C4900D878A2 /* PostsApp */ = {
 			isa = PBXGroup;
 			children = (
-				B27EE8D727216C4900D878A2 /* AppDelegate.swift */,
-				B27EE8D927216C4900D878A2 /* SceneDelegate.swift */,
-				B27EE8DB27216C4900D878A2 /* ViewController.swift */,
-				B27EE8DD27216C4900D878A2 /* Main.storyboard */,
+				B27EE8ED27216C8200D878A2 /* Application Layer */,
+				B27EE8EB27216C6000D878A2 /* Presentation layer */,
+				B27EE8EE27216CB900D878A2 /* Buisiness Logic Layer */,
+				B27EE8EC27216C7800D878A2 /* Supporting Files */,
+			);
+			path = PostsApp;
+			sourceTree = "<group>";
+		};
+		B27EE8EB27216C6000D878A2 /* Presentation layer */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE8FC27216F4700D878A2 /* Posts Scene */,
+				B27EE8FD27216F5500D878A2 /* Posts Details Scene */,
+				B27EE91F2721A1EB00D878A2 /* Create Post Scene */,
+				B2A8E1D72721CA8D002DBB7E /* Edit Post Scene */,
+			);
+			path = "Presentation layer";
+			sourceTree = "<group>";
+		};
+		B27EE8EC27216C7800D878A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8E1D42721C269002DBB7E /* Extension */,
+				B27EE9192721968C00D878A2 /* Reusable Views */,
 				B27EE8E027216C4C00D878A2 /* Assets.xcassets */,
 				B27EE8E227216C4C00D878A2 /* LaunchScreen.storyboard */,
 				B27EE8E527216C4C00D878A2 /* Info.plist */,
 			);
-			path = PostsApp;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B27EE8ED27216C8200D878A2 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE8D727216C4900D878A2 /* AppDelegate.swift */,
+				B27EE8D927216C4900D878A2 /* SceneDelegate.swift */,
+			);
+			path = "Application Layer";
+			sourceTree = "<group>";
+		};
+		B27EE8EE27216CB900D878A2 /* Buisiness Logic Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE9302721A4C200D878A2 /* APIBuilder.swift */,
+				B27EE90A27216F8C00D878A2 /* WebService Engine */,
+				B27EE912272178F900D878A2 /* Response Decoder */,
+			);
+			path = "Buisiness Logic Layer";
+			sourceTree = "<group>";
+		};
+		B27EE8FC27216F4700D878A2 /* Posts Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE8DD27216C4900D878A2 /* Main.storyboard */,
+				B27EE8EF27216F3300D878A2 /* PostsScenePresenter.swift */,
+				B27EE8F027216F3300D878A2 /* PostsSceneWorker.swift */,
+				B27EE8F127216F3300D878A2 /* PostsSceneRouter.swift */,
+				B27EE8F227216F3300D878A2 /* PostsSceneViewController.swift */,
+				B27EE8F327216F3300D878A2 /* PostsSceneInteractor.swift */,
+				B27EE8F427216F3300D878A2 /* PostsSceneModel.swift */,
+			);
+			path = "Posts Scene";
+			sourceTree = "<group>";
+		};
+		B27EE8FD27216F5500D878A2 /* Posts Details Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE91727217FDA00D878A2 /* PostDetailsView.storyboard */,
+				B27EE90127216F6F00D878A2 /* PostsDetailsSceneViewController.swift */,
+				B27EE8FE27216F6F00D878A2 /* PostsDetailsScenePresenter.swift */,
+				B27EE8FF27216F6F00D878A2 /* PostsDetailsSceneWorker.swift */,
+				B27EE90227216F6F00D878A2 /* PostDetailsSceneInteractor.swift */,
+				B27EE90327216F6F00D878A2 /* PostDetailsSceneModel.swift */,
+			);
+			path = "Posts Details Scene";
+			sourceTree = "<group>";
+		};
+		B27EE90A27216F8C00D878A2 /* WebService Engine */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE90B272178D000D878A2 /* WebServiceConfig.swift */,
+				B27EE90D272178E200D878A2 /* WebServiceConstants.swift */,
+				B27EE910272178F500D878A2 /* WebServiceHelper.swift */,
+			);
+			path = "WebService Engine";
+			sourceTree = "<group>";
+		};
+		B27EE912272178F900D878A2 /* Response Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE9132721790E00D878A2 /* JSONResponseDecoder.swift */,
+			);
+			path = "Response Decoder";
+			sourceTree = "<group>";
+		};
+		B27EE9192721968C00D878A2 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8E1CF2721BFAD002DBB7E /* InputTextField TableViewCell */,
+				B27EE91A2721969E00D878A2 /* TitleSubtitle TableViewCell */,
+			);
+			path = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		B27EE91A2721969E00D878A2 /* TitleSubtitle TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE91B272196CC00D878A2 /* TitleSubtitleTableViewCell.swift */,
+				B27EE91C272196CC00D878A2 /* TitleSubtitleTableViewCell.xib */,
+			);
+			path = "TitleSubtitle TableViewCell";
+			sourceTree = "<group>";
+		};
+		B27EE91F2721A1EB00D878A2 /* Create Post Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B27EE92E2721A27100D878A2 /* CreatePostView.storyboard */,
+				B27EE9202721A23000D878A2 /* CreatePostScenePresenter.swift */,
+				B27EE9212721A23000D878A2 /* CreatePostSceneWorker.swift */,
+				B27EE9232721A23000D878A2 /* CreatePostSceneViewController.swift */,
+				B27EE9242721A23000D878A2 /* CreatePostSceneInteractor.swift */,
+			);
+			path = "Create Post Scene";
+			sourceTree = "<group>";
+		};
+		B2A8E1CF2721BFAD002DBB7E /* InputTextField TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8E1D02721BFD9002DBB7E /* InputTextFeildTableViewCell.swift */,
+				B2A8E1D12721BFD9002DBB7E /* InputTextFeildTableViewCell.xib */,
+			);
+			path = "InputTextField TableViewCell";
+			sourceTree = "<group>";
+		};
+		B2A8E1D42721C269002DBB7E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8E1D52721C288002DBB7E /* Encodable+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B2A8E1D72721CA8D002DBB7E /* Edit Post Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B2A8E1E42721CB69002DBB7E /* EditPostView.storyboard */,
+				B2A8E1D82721CAAD002DBB7E /* EditPostScenePresenter.swift */,
+				B2A8E1D92721CAAD002DBB7E /* EditPostSceneWorker.swift */,
+				B2A8E1DB2721CAAD002DBB7E /* EditPostSceneViewController.swift */,
+				B2A8E1DC2721CAAD002DBB7E /* EditPostSceneInteractor.swift */,
+			);
+			path = "Edit Post Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B27EE8E427216C4C00D878A2 /* LaunchScreen.storyboard in Resources */,
+				B27EE92F2721A27100D878A2 /* CreatePostView.storyboard in Resources */,
+				B27EE91E272196CC00D878A2 /* TitleSubtitleTableViewCell.xib in Resources */,
 				B27EE8E127216C4C00D878A2 /* Assets.xcassets in Resources */,
+				B2A8E1D32721BFD9002DBB7E /* InputTextFeildTableViewCell.xib in Resources */,
+				B2A8E1E52721CB69002DBB7E /* EditPostView.storyboard in Resources */,
 				B27EE8DF27216C4900D878A2 /* Main.storyboard in Resources */,
+				B27EE91827217FDA00D878A2 /* PostDetailsView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +348,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B27EE8DC27216C4900D878A2 /* ViewController.swift in Sources */,
+				B27EE91D272196CC00D878A2 /* TitleSubtitleTableViewCell.swift in Sources */,
+				B27EE90827216F6F00D878A2 /* PostDetailsSceneInteractor.swift in Sources */,
+				B27EE90427216F6F00D878A2 /* PostsDetailsScenePresenter.swift in Sources */,
+				B27EE90727216F6F00D878A2 /* PostsDetailsSceneViewController.swift in Sources */,
+				B27EE9312721A4C200D878A2 /* APIBuilder.swift in Sources */,
+				B27EE9292721A23000D878A2 /* CreatePostSceneViewController.swift in Sources */,
+				B2A8E1D22721BFD9002DBB7E /* InputTextFeildTableViewCell.swift in Sources */,
+				B27EE90527216F6F00D878A2 /* PostsDetailsSceneWorker.swift in Sources */,
+				B2A8E1DE2721CAAD002DBB7E /* EditPostScenePresenter.swift in Sources */,
+				B27EE90927216F6F00D878A2 /* PostDetailsSceneModel.swift in Sources */,
+				B27EE90C272178D000D878A2 /* WebServiceConfig.swift in Sources */,
+				B27EE8F827216F3300D878A2 /* PostsSceneViewController.swift in Sources */,
+				B2A8E1E22721CAAD002DBB7E /* EditPostSceneInteractor.swift in Sources */,
+				B27EE8FA27216F3300D878A2 /* PostsSceneModel.swift in Sources */,
+				B2A8E1E12721CAAD002DBB7E /* EditPostSceneViewController.swift in Sources */,
+				B27EE9262721A23000D878A2 /* CreatePostScenePresenter.swift in Sources */,
 				B27EE8D827216C4900D878A2 /* AppDelegate.swift in Sources */,
+				B27EE9272721A23000D878A2 /* CreatePostSceneWorker.swift in Sources */,
+				B27EE911272178F500D878A2 /* WebServiceHelper.swift in Sources */,
 				B27EE8DA27216C4900D878A2 /* SceneDelegate.swift in Sources */,
+				B27EE8F527216F3300D878A2 /* PostsScenePresenter.swift in Sources */,
+				B27EE92A2721A23000D878A2 /* CreatePostSceneInteractor.swift in Sources */,
+				B2A8E1D62721C288002DBB7E /* Encodable+Extension.swift in Sources */,
+				B27EE8F627216F3300D878A2 /* PostsSceneWorker.swift in Sources */,
+				B27EE9142721790E00D878A2 /* JSONResponseDecoder.swift in Sources */,
+				B27EE90E272178E200D878A2 /* WebServiceConstants.swift in Sources */,
+				B2A8E1DF2721CAAD002DBB7E /* EditPostSceneWorker.swift in Sources */,
+				B27EE8F727216F3300D878A2 /* PostsSceneRouter.swift in Sources */,
+				B27EE8F927216F3300D878A2 /* PostsSceneInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +526,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PostsApp/Info.plist;
+				INFOPLIST_FILE = "PostsApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +554,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PostsApp/Info.plist;
+				INFOPLIST_FILE = "PostsApp/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
